@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-night text-white font-body;
+}
+
+.card {
+  @apply bg-petrol rounded-card p-6 border border-white/5;
+}
+
+.btn-primary {
+  @apply bg-mint text-night font-display font-bold px-6 py-3 rounded-xl
+         transition hover:brightness-110 active:scale-95;
+}
+
+.stat-number {
+  @apply font-display text-4xl font-bold text-sand;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
